@@ -3,6 +3,11 @@ LIE DETECTION AI
 
 A Machine Learning-Based Voice Analysis System
 
+
+![image alt](https://github.com/BenkhiraAhmedBaderEddine1/LIE-DETECTION-AI/blob/fcb5776c9013746e8cb3c818de39c741cb210c2c/image123.png)
+
+
+
 # 1. Abstract
 
 The Lie Detection AI project is an artificial intelligence-based application designed to analyze selected characteristics of human speech using audio signal processing and machine learning techniques. The system allows users to upload an audio recording in WAV format, extracts numerical features from the audio signal, and processes these features using a Random Forest classifier to generate a binary prediction.
