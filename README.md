@@ -258,3 +258,37 @@ Consequently, the system should be considered an educational demonstration rathe
 | Scikit-learn | Machine learning and classification |
 | Random Forest | Classification algorithm |
 | Temporary Files | Intermediate storage of uploaded audio |
+
+
+7.1. Python
+ <p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="Blue divider"/>
+  <br>
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="Blue divider"/>
+</p>
+
+Python was selected because of its readable syntax and extensive ecosystem of libraries for artificial intelligence, scientific computing, and application development.
+7.2. Streamlit
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="red divider"/>
+  <br>
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="red divider"/>
+</p>
+Streamlit is used to build the user interface without requiring a separate frontend framework. It provides components for uploading files, displaying audio, presenting numerical values, and showing prediction results.
+7.3. Librosa
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="purple divider"/>
+  <br>
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="purple divider"/>
+</p>
+Librosa is used to load and process the uploaded audio recording. In the current implementation, the audio is converted into a numerical array that can be analyzed using NumPy.
+7.4. NumPy
+NumPy performs numerical operations on the audio signal, including calculating its standard deviation and determining the proportion of samples whose absolute amplitude falls below a selected threshold.
+7.5. Pandas
+Pandas organizes the predefined training examples into a DataFrame. Each row contains three input features and one target label.
+7.6. Scikit-learn
+Scikit-learn provides the Random Forest classifier and the methods required to train the model and generate predictions.
+8. System Architecture
+The system follows a simple machine learning pipeline:
+
+
