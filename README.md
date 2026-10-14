@@ -23,6 +23,12 @@
 
 
 # 1. Abstract
+```html
+<p align="center">
+  <span style="color:#00F5FF;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
+  <span style="color:#00F5FF;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+</p>
+```
 
 The Lie Detection AI project is an artificial intelligence-based application designed to analyze selected characteristics of human speech using audio signal processing and machine learning techniques. The system allows users to upload an audio recording in WAV format, extracts numerical features from the audio signal, and processes these features using a Random Forest classifier to generate a binary prediction.
 
@@ -37,6 +43,13 @@ The primary objective of this project is to demonstrate the integration of audio
 
 2. Introduction
 
+```html
+<p align="center">
+  <span style="color:#00F5FF;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
+  <span style="color:#00F5FF;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+</p>
+```
+
    Artificial Intelligence has become an important technology in the development of intelligent systems capable of processing data, identifying patterns, and generating predictions. One of its applications is speech analysis, which involves examining acoustic characteristics of human speech through digital signal processing and machine learning techniques.
 
 Human speech contains several measurable characteristics, including amplitude, pitch, speaking rate, pauses, and variations in vocal intensity. These characteristics may change depending on a person's emotional state, environment, or speaking conditions. Analyzing these variations provides an opportunity to explore how machine learning can be applied to speech-related data.
@@ -48,6 +61,12 @@ The system combines Python-based audio processing with a simple interactive inte
 Although the application uses the terminology of lie detection, its current capabilities are limited to experimental feature analysis and classification. It does not establish whether a speaker is actually lying. Instead, it demonstrates the technical workflow required to build an audio-based machine learning application and provides a foundation for future improvements.
 
 3. Project Description
+ ```html
+<p align="center">
+  <span style="color:#00F5FF;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
+  <span style="color:#00F5FF;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+</p>
+```
 
 The Lie Detection AI system is a web-based application that processes uploaded audio recordings and generates a machine learning classification result.
 
@@ -61,7 +80,12 @@ The application is designed to be simple and interactive, making it suitable for
 
 
 3. Project Description
-   
+  ```html
+<p align="center">
+  <span style="color:#00F5FF;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
+  <span style="color:#00F5FF;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+</p>
+```
 The Lie Detection AI system is a web-based application that processes uploaded audio recordings and generates a machine learning classification result.
 The application follows a sequence of operations. First, the user uploads an audio file in WAV format. The application temporarily stores the file so that it can be processed. Next, the audio signal is loaded using Librosa, and selected numerical characteristics are calculated.
 The extracted features are then passed to a Random Forest classifier that has been trained using a small predefined dataset. The model predicts one of two classes, represented by the labels 0 and 1. The application maps these labels to the displayed categories “TRUTH” and “LIE.”
@@ -72,6 +96,12 @@ The application is designed to be simple and interactive, making it suitable for
 
 
 5. Problem Statement
+ ```html
+<p align="center">
+  <span style="color:#00F5FF;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
+  <span style="color:#00F5FF;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+</p>
+```
    
 Analyzing human speech computationally presents several challenges because vocal characteristics vary between individuals and across different situations. Changes in speaking patterns may be associated with stress, anxiety, fatigue, environmental noise, or other factors.
 The main problem addressed by this project is how to develop a simple application that processes speech recordings, extracts measurable audio features, and applies a machine learning classifier to produce a structured prediction.
