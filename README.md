@@ -268,27 +268,65 @@ Consequently, the system should be considered an educational demonstration rathe
 </p>
 
 Python was selected because of its readable syntax and extensive ecosystem of libraries for artificial intelligence, scientific computing, and application development.
+
+
 7.2. Streamlit
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="red divider"/>
+ <p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=FF003C" width="100%" alt="Red Line 1"/>
   <br>
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="red divider"/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=FF003C" width="100%" alt="Red Line 2"/>
 </p>
+
+
 Streamlit is used to build the user interface without requiring a separate frontend framework. It provides components for uploading files, displaying audio, presenting numerical values, and showing prediction results.
+
+
 7.3. Librosa
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="purple divider"/>
+
+ <p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=9D00FF" width="100%" alt="Purple Line 1"/>
   <br>
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="purple divider"/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=9D00FF" width="100%" alt="Purple Line 2"/>
 </p>
+
+
 Librosa is used to load and process the uploaded audio recording. In the current implementation, the audio is converted into a numerical array that can be analyzed using NumPy.
+
 7.4. NumPy
+ <p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="Blue divider"/>
+  <br>
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="Blue divider"/>
+</p>
 NumPy performs numerical operations on the audio signal, including calculating its standard deviation and determining the proportion of samples whose absolute amplitude falls below a selected threshold.
+
 7.5. Pandas
+
+ <p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=FF003C" width="100%" alt="Red Line 1"/>
+  <br>
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=FF003C" width="100%" alt="Red Line 2"/>
+</p>
+
+
 Pandas organizes the predefined training examples into a DataFrame. Each row contains three input features and one target label.
+
 7.6. Scikit-learn
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=00F5FF" width="100%" alt="Cyan line 1"/>
+  <br/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=00F5FF" width="100%" alt="Cyan line 2"/>
+</p>
 Scikit-learn provides the Random Forest classifier and the methods required to train the model and generate predictions.
+
 8. System Architecture
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=FF8C00" width="100%" alt="Orange line 1"/>
+  <br/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=FF8C00" width="100%" alt="Orange line 2"/>
+</p>
+
 The system follows a simple machine learning pipeline:
 
 
