@@ -394,3 +394,6 @@ flowchart TD
 
 
 
+ <p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=25&pause=500&color=00F5FF&center=false&vCenter=true&width=950&height=220&lines=The+architecture+consists+of+five+main+stages%3A;input+acquisition%2C+audio+processing%2C+feature+extraction%2C;machine+learning+classification%2C+and+result+presentation.;The+input+stage+receives+a+WAV+audio+file+from+the+user.;The+processing+stage+loads+the+file+into+a+numerical+signal+representation.;The+feature+extraction+stage+calculates+the+selected+numerical+indicators.;These+indicators+are+passed+to+the+Random+Forest+classifier%2C;which+generates+a+predicted+class.;The+final+stage+displays+the+extracted+features%2C;the+classification+result%2C+and+a+simple+rule-based+explanation;through+the+Streamlit+interface." alt="Animated System Architecture Description"/>
+</p>
