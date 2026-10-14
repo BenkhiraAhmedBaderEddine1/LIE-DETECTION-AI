@@ -1078,11 +1078,9 @@ Consider reframing the system as an audio-based speech-feature analysis tool or 
 
 The following architecture represents a future development plan rather than functionality already implemented in the submitted code.
 
-
-
-```html
+    ```html
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&duration=25&pause=1200&color=00FF66&center=true&vCenter=true&width=1000&height=220&lines=%E2%9E%A4+01.+AUDIO+INPUT;%E2%94%9C%E2%94%80+WAV+upload+%2F+Optional+Microphone;%E2%9E%A4+02.+AUDIO+VALIDATION+%26+PROCESSING;%E2%94%9C%E2%94%80+File+checks+%7C+Normalization+%7C+Voice+Activity+Detection;%E2%9E%A4+03.+ACOUSTIC+FEATURE+EXTRACTION;%E2%94%9C%E2%94%80+Pitch+%7C+RMS+Energy+%7C+MFCCs+%7C+Spectral+Features;%E2%9E%A4+04.+TRAINED+ML+MODEL;%E2%94%9C%E2%94%80+Validated+Model+%7C+Consistent+Preprocessing;%E2%9E%A4+05.+RESULTS+%26+EXPLANATIONS;%E2%94%94%E2%94%80+Features+%7C+Uncertainty+%7C+Model+Limitations" alt="Future Architecture - Animated Typing Diagram"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=25&pause=500&color=00F5FF&center=false&vCenter=true&width=950&height=260&lines=PROPOSED+FUTURE+ARCHITECTURE;STAGE+1%3A+AUDIO+INPUT;WAV+upload+or+optional+microphone+recording;STAGE+2%3A+AUDIO+VALIDATION+AND+PROCESSING;File+checks%2C+normalization%2C+voice+activity+detection;STAGE+3%3A+ACOUSTIC+FEATURE+EXTRACTION;Pitch%2C+RMS+energy%2C+MFCCs%2C+spectral+features;STAGE+4%3A+TRAINED+ML+MODEL;Validated+model+and+consistent+preprocessing;STAGE+5%3A+RESULTS+AND+EXPLANATIONS;Feature+display%2C+uncertainty%2C+model+limitations" alt="Animated Proposed Future Architecture"/>
 </p>
 ```
 
