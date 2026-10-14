@@ -82,22 +82,6 @@ The current prototype addresses this question by implementing a basic feature ex
 
 
 
-
-6. Project Objectives
-   
-The main objective of the Lie Detection AI project is to develop an interactive machine learning application that demonstrates the processing and classification of audio data.
-The specific objectives are:
-1. To develop a user-friendly interface for uploading audio recordings.
-2. To process audio files using Python-based audio processing tools.
-3. To extract numerical features from the audio signal.
-4. To implement a Random Forest classification algorithm.
-5. To generate a binary prediction from the extracted features.
-6. To display the extracted features and classification results.
-7. To provide a simple rule-based explanation of selected feature values.
-8. To demonstrate the practical integration of Artificial Intelligence and web application development.
-9. To identify the limitations of the current prototype and propose future improvements.
-10. To establish a foundation for more rigorous research into speech analysis and machine learning.
-
  <!-- ═══════════════════ PROJECT OBJECTIVES — NEON EDITION ═══════════════════ -->
 
 <h2 align="center">🎯 PROJECT OBJECTIVES</h2>
