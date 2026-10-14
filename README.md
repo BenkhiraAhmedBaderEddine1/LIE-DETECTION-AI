@@ -1099,7 +1099,6 @@ The following architecture represents a future development plan rather than func
 
 
 
-
 ```mermaid
 %%{init: {'theme':'dark','themeVariables': {'background':'#0a0014','primaryColor':'#1a0b2e','primaryTextColor':'#fef3c7','primaryBorderColor':'#facc15','lineColor':'#f59e0b','secondaryColor':'#3b0764','tertiaryColor':'#0f0a1f','fontFamily':'Arial'}}}%%
 flowchart TD
@@ -1143,7 +1142,9 @@ flowchart TD
     class H model
     class I,J result
 
-    linkStyle default ```
+    linkStyle default stroke:#f59e0b,stroke-width:2px
+```
+
 
 
 🔷 23. Proposed Improved Architecture
