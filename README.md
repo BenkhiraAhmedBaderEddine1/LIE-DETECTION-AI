@@ -1,7 +1,7 @@
+ <!-- ═══════════════════ LIE DETECTION AI — FUTURISTIC PROJECT README ═══════════════════ -->
 
-LIE DETECTION AI
-
-A Machine Learning-Based Voice Analysis System
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=venom&height=250&color=0:020617,25:0B1535,
 
 
 ![image alt](https://github.com/BenkhiraAhmedBaderEddine1/LIE-DETECTION-AI/blob/fcb5776c9013746e8cb3c818de39c741cb210c2c/image123.png)
