@@ -1078,11 +1078,12 @@ Consider reframing the system as an audio-based speech-feature analysis tool or 
 
 The following architecture represents a future development plan rather than functionality already implemented in the submitted code.
 
-   ``html
-<p align="center">
+
+
+  <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=25&pause=500&color=39FF14&center=false&vCenter=true&width=950&height=260&lines=PROPOSED+FUTURE+ARCHITECTURE;STAGE+1%3A+AUDIO+INPUT;WAV+upload+or+optional+microphone+recording;STAGE+2%3A+AUDIO+VALIDATION+AND+PROCESSING;File+checks%2C+normalization%2C+voice+activity+detection;STAGE+3%3A+ACOUSTIC+FEATURE+EXTRACTION;Pitch%2C+RMS+energy%2C+MFCCs%2C+spectral+features;STAGE+4%3A+TRAINED+ML+MODEL;Validated+model+and+consistent+preprocessing;STAGE+5%3A+RESULTS+AND+EXPLANATIONS;Feature+display%2C+uncertainty%2C+model+limitations" alt="Animated Proposed Future Architecture"/>
 </p>
-```
+
 
 <p align="center">
   <b>🔊 AUDIO INPUT</b>
