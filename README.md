@@ -552,3 +552,213 @@ The modules were connected through Streamlit so that users could upload audio re
 **Stage 9: Limitations and Future Improvements**
 
 The final stage involves identifying methodological limitations and defining improvements, including better data collection, validated acoustic features, systematic testing, and appropriate performance metrics.
+
+# <span style="color:#00D9FF">14. Explanation of the Main Code</span>
+
+This section explains the main components of the LIE DETECTION AI application, including library imports, dataset preparation, model training, audio feature extraction, and result presentation.
+
+---
+
+## <span style="color:#00D9FF">14.1. Importing Libraries</span>
+
+```python
+import streamlit as st
+import numpy as np
+import pandas as pd
+import librosa
+import tempfile
+from sklearn.ensemble import RandomForestClassifier
+```
+
+These statements import the libraries required by the application.
+
+- `streamlit` builds the interface.
+- `numpy` performs numerical calculations.
+- `pandas` organizes the training data.
+- `librosa` loads the audio recording.
+- `tempfile` creates temporary files.
+- `RandomForestClassifier` provides the machine learning algorithm.
+
+---
+
+## <span style="color:#00D9FF">14.2. Creating the Training Dataset</span>
+
+```python
+data = pd.DataFrame({
+    "voice_stress": [8,7,2,9,1,6,8,3,7,2],
+    "pause_rate":   [7,6,2,8,1,5,7,2,6,1],
+    "eye_shift":    [8,7,2,9,1,6,8,2,7,1],
+    "label":        [1,1,0,1,0,1,1,0,1,0]
+})
+```
+
+A Pandas DataFrame is created with four columns. Three columns represent the input features, and the `label` column represents the target class.
+
+The numerical values are manually specified. They are not calculated from a collection of real labeled voice recordings.
+
+---
+
+## <span style="color:#00D9FF">14.3. Separating Inputs and Labels</span>
+
+```python
+X = data[["voice_stress", "pause_rate", "eye_shift"]]
+y = data["label"]
+```
+
+`X` contains the model's input features, while `y` contains the target labels.
+
+This separation is standard practice in supervised machine learning.
+
+---
+
+## <span style="color:#00D9FF">14.4. Training the Model</span>
+
+```python
+model = RandomForestClassifier()
+model.fit(X, y)
+```
+
+The first statement creates the classifier with Scikit-learn's default settings. The second trains it on the ten predefined observations.
+
+Because no `random_state` or hyperparameters are specified, the experiment is not fully controlled for reproducibility.
+
+The model is trained when the application script executes, rather than loaded from a previously saved model.
+
+---
+
+## <span style="color:#00D9FF">14.5. Extracting Audio Features</span>
+
+```python
+def extract_features(audio_path):
+    y, sr = librosa.load(audio_path, sr=None)
+    voice_stress = np.std(y) * 100
+    pause_rate = np.sum(np.abs(y) < 0.02) / len(y) * 10
+    eye_shift = voice_stress * 0.7
+    return voice_stress, pause_rate, eye_shift
+```
+
+The function receives the path of the audio file and loads the audio samples.
+
+The variable `y` contains the audio signal, and `sr` contains its sampling rate. The sampling rate is not used in the subsequent calculations.
+
+The function calculates the three features and returns them as a tuple.
+
+A production implementation should also validate empty recordings, audio duration, corrupted files, and numerical edge cases.
+
+---
+
+## <span style="color:#00D9FF">14.6. Generating Explanatory Messages</span>
+
+```python
+def explain(vs, pr, es):
+    reasons = []
+    if vs > 6:
+        reasons.append("High voice stress detected")
+    if pr > 6:
+        reasons.append("Frequent pauses detected")
+    if es > 6:
+        reasons.append("Irregular speech pattern detected")
+    return reasons
+```
+
+The function compares the feature values with predefined thresholds.
+
+If a condition is satisfied, the corresponding message is added to a list.
+
+This is a simple rule-based explanation. The thresholds are not shown to have been learned or validated from real data, and the messages do not prove deception.
+
+---
+
+## <span style="color:#00D9FF">14.7. Configuring the Interface</span>
+
+```python
+st.set_page_config(
+    page_title="Lie Detection AI",
+    layout="centered"
+)
+
+st.title("AI Lie Detection System")
+st.write("Upload or record voice to detect truth vs lie")
+
+audio_file = st.file_uploader(
+    "Upload WAV audio",
+    type=["wav"]
+)
+```
+
+This section configures the page, displays the title and description, and creates an upload component that accepts WAV files.
+
+Despite the text mentioning recording, the current code does not implement direct microphone recording. It only implements file uploading.
+
+---
+
+## <span style="color:#00D9FF">14.8. Storing and Playing the Audio</span>
+
+```python
+if audio_file is not None:
+    with tempfile.NamedTemporaryFile(
+        delete=False,
+        suffix=".wav"
+    ) as tmp:
+        tmp.write(audio_file.read())
+        path = tmp.name
+
+    st.audio(audio_file)
+```
+
+The application checks whether the user has uploaded a file.
+
+If a file is available, its contents are written to a temporary WAV file. The resulting path is saved in `path`, which is then used for feature extraction.
+
+The audio player allows the user to listen to the uploaded recording.
+
+A production version should also implement secure temporary-file handling and cleanup.
+
+---
+
+## <span style="color:#00D9FF">14.9. Displaying Features and Predicting a Class</span>
+
+```python
+vs, pr, es = extract_features(path)
+
+st.subheader("Features")
+st.write({
+    "voice_stress": vs,
+    "pause_rate": pr,
+    "eye_shift": es
+})
+
+pred = model.predict([[vs, pr, es]])[0]
+decision = "LIE" if pred == 1 else "TRUTH"
+
+st.subheader("Decision")
+st.title(decision)
+```
+
+First, the application extracts the feature values. It then displays them in the interface.
+
+The `predict()` method receives one observation represented by a two-dimensional list. The returned class is mapped to the displayed label.
+
+The prediction represents the classifier's output, not a verified judgment about the speaker's honesty.
+
+---
+
+## <span style="color:#00D9FF">14.10. Displaying the Explanation</span>
+
+```python
+st.subheader("AI Explanation")
+reasons = explain(vs, pr, es)
+
+for r in reasons:
+    st.write("•", r)
+```
+
+The application calls the explanation function and displays each returned message.
+
+If none of the conditions is satisfied, the list remains empty and no explanatory bullet points are displayed.
+
+---
+
+<p align="center">
+  <sub>Built with Python, Streamlit, Librosa, Pandas, NumPy, and Scikit-learn.</sub>
+</p>
