@@ -485,3 +485,70 @@ The model is trained using the `fit()` method and generates predictions using th
 However, using Random Forest does not automatically make a system accurate or reliable. The quality of the predictions depends on the quality, size, representativeness, and labeling of the training data, as well as appropriate model evaluation.
 
 In the current implementation, the model is trained on only ten predefined examples. No independent test set or formal evaluation procedure is included.
+
+
+12. Feature Extraction and Audio Processing
+Feature extraction is the process of transforming raw audio into numerical measurements that can be used by a machine learning algorithm.
+The current implementation defines three features.
+12.1. Voice Stress
+The code calculates:
+voice_stress = np.std(y) * 100
+Here, y is the array of audio samples returned by Librosa.
+The standard deviation measures the variation of the sample amplitudes around their mean. Multiplying this value by 100 changes its numerical scale.
+Important technical limitation: this calculation does not directly measure psychological stress. It is an amplitude-variation statistic, and its value can depend on recording volume, microphone characteristics, background noise, and audio normalization.
+12.2. Pause Rate
+The code calculates:
+pause_rate = np.sum(np.abs(y) < 0.02) / len(y) * 10
+This expression counts samples whose absolute amplitude is below 0.02, divides that count by the total number of samples, and multiplies the result by 10.
+The calculation approximates the proportion of low-amplitude samples, scaled by a factor of ten.
+It does not directly count pauses as linguistic events. Silence detection would require additional considerations, such as a minimum pause duration, frame-based energy measurements, and an appropriate threshold.
+12.3. Eye Shift
+The code calculates:
+eye_shift = voice_stress * 0.7
+This feature is artificially generated from the voice-stress value. It is not extracted from a camera, image, or eye-tracking sensor.
+Therefore, it must not be described as actual eye-movement detection.
+For a scientifically sound audio-only system, this feature should be removed or replaced with a genuine acoustic feature. A real eye-movement analysis module would require a separate visual input pipeline and appropriate validation.
+12.4. Feature Vector
+The three calculated values are combined into a feature vector:
+[voice_stress, pause_rate, eye_shift]
+This vector is passed to the Random Forest classifier.
+The model expects the features in the same order used during training.
+13. Methodology: How the Project Was Developed
+
+    The project development process can be divided into several stages.
+
+**Stage 1: Problem Definition**
+
+The initial step was to identify the project objective: creating an interactive application that demonstrates audio feature analysis and machine learning classification.
+
+**Stage 2: Technology Selection**
+
+Python was selected as the main programming language. Streamlit was chosen for the interface, Librosa for audio processing, NumPy for numerical calculations, Pandas for dataset organization, and Scikit-learn for the classification algorithm.
+
+**Stage 3: Dataset Preparation**
+
+A small dataset was defined directly in the source code. It contained three numerical features and a binary target label.
+
+**Stage 4: Model Training**
+
+The input features were separated from the target variable. A Random Forest classifier was initialized and trained using the `fit()` method.
+
+**Stage 5: Audio Processing**
+
+A feature extraction function was implemented to load the audio file and calculate the selected numerical indicators.
+
+**Stage 6: Prediction**
+
+The extracted values were passed to the trained model through the `predict()` method.
+
+**Stage 7: Explanation**
+
+A separate rule-based function was created to generate messages when certain feature values exceeded predefined thresholds.
+
+**Stage 8: Interface Integration**
+
+The modules were connected through Streamlit so that users could upload audio recordings and view the resulting features and classification.
+
+**Stage 9: Limitations and Future Improvements**
+
+The final stage involves identifying methodological limitations and defining improvements, including better data collection, validated acoustic features, systematic testing, and appropriate performance metrics.
