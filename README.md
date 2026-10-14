@@ -329,4 +329,68 @@ Scikit-learn provides the Random Forest classifier and the methods required to t
 
 The system follows a simple machine learning pipeline:
 
+## ⚡ SYSTEM ARCHITECTURE — LIE DETECTION AI
+
+```mermaid
+%%{init: {'theme':'dark','themeVariables': {'background':'#020617','primaryColor':'#082f49','primaryTextColor':'#e0f2fe','primaryBorderColor':'#00f5ff','lineColor':'#38bdf8','secondaryColor':'#2e1065','tertiaryColor':'#0f172a','fontFamily':'Arial'}}}%%
+flowchart TD
+
+    U(["👤 User"])
+    UI["🌐 Streamlit Interface"]
+    UP["🎙️ Upload WAV Audio"]
+    FS[("📁 Temporary File Storage")]
+    LIB["🔊 Librosa Audio Loading"]
+    FE["⚙️ Feature Extraction"]
+
+    VS["🎚️ Voice Stress"]
+    PR["⏱️ Pause Rate"]
+    ES["👁️ Simulated Eye Shift"]
+
+    FV["🧬 Feature Vector"]
+    RF["🌲 Random Forest Classifier"]
+    PC["🔮 Predicted Class"]
+    EX["💡 Rule-Based Explanation"]
+    OUT(["📊 Display Results"])
+
+    U --> UI
+    UI --> UP
+    UP --> FS
+    FS --> LIB
+    LIB --> FE
+
+    FE --> VS
+    FE --> PR
+    FE --> ES
+
+    VS --> FV
+    PR --> FV
+    ES --> FV
+
+    FV --> RF
+    RF --> PC
+    PC --> EX
+    EX --> OUT
+
+    classDef start fill:#082f49,stroke:#00f5ff,color:#ffffff,stroke-width:2px
+    classDef process fill:#0b1b35,stroke:#38bdf8,color:#e0f2fe,stroke-width:1.5px
+    classDef feature fill:#241044,stroke:#a855f7,color:#f3e8ff,stroke-width:2px
+    classDef model fill:#052e2b,stroke:#00ff99,color:#d1fae5,stroke-width:2px
+    classDef result fill:#3b1638,stroke:#ff3cac,color:#fce7f3,stroke-width:2px
+    classDef storage fill:#172554,stroke:#818cf8,color:#e0e7ff,stroke-width:2px
+
+    class U,OUT start
+    class UI,UP,LIB,FE process
+    class FS storage
+    class VS,PR,ES,FV feature
+    class RF model
+    class PC,EX result
+
+    linkStyle default stroke:#38bdf8,stroke-width:2px
+```
+
+<p align="center">
+  <b>🎙️ AUDIO INPUT → 🧬 FEATURE EXTRACTION → 🌲 RANDOM FOREST → 📊 RESULTS</b>
+</p>
+
+
 
