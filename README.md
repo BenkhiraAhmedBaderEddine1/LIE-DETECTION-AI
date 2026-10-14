@@ -394,9 +394,16 @@ flowchart TD
 
 
 
+## 🟢 SYSTEM ARCHITECTURE — DESCRIPTION
+
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&duration=35&pause=10000&color=00FF66&center=false&vCenter=true&width=1000&height=300&repeat=true&lines=The%20architecture%20consists%20of%20five%20main%20stages%3A%20input%20acquisition%2C%20audio%20processing%2C%20feature%20extraction%2C%20machine%20learning%20classification%2C%20and%20result%20presentation.%20The%20input%20stage%20receives%20a%20WAV%20audio%20file%20from%20the%20user.%20The%20processing%20stage%20loads%20the%20file%20into%20a%20numerical%20signal%20representation.%20The%20feature%20extraction%20stage%20calculates%20the%20selected%20numerical%20indicators.%20These%20indicators%20are%20passed%20to%20the%20Random%20Forest%20classifier%2C%20which%20generates%20a%20predicted%20class.%20The%20final%20stage%20displays%20the%20extracted%20features%2C%20the%20classification%20result%2C%20and%20a%20simple%20rule-based%20explanation%20through%20the%20Streamlit%20interface." alt="Full architecture description typed in neon green"/>
+  <img
+    src="assets/lie_detection_full_architecture_typing.gif"
+    width="100%"
+    alt="LIE DETECTION AI — Full Architecture Description with Neon Green Typing Animation"
+  />
 </p>
+
 
 
 
