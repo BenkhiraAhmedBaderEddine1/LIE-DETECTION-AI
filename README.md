@@ -44,3 +44,52 @@ The extracted features are then passed to a Random Forest classifier that has be
 Finally, the interface presents the audio recording, the calculated feature values, the predicted class, and a simple explanation based on predefined thresholds.
 
 The application is designed to be simple and interactive, making it suitable for demonstrating the integration of data processing, machine learning, and web development in a single project. 
+
+
+3. Project Description
+   
+The Lie Detection AI system is a web-based application that processes uploaded audio recordings and generates a machine learning classification result.
+The application follows a sequence of operations. First, the user uploads an audio file in WAV format. The application temporarily stores the file so that it can be processed. Next, the audio signal is loaded using Librosa, and selected numerical characteristics are calculated.
+The extracted features are then passed to a Random Forest classifier that has been trained using a small predefined dataset. The model predicts one of two classes, represented by the labels 0 and 1. The application maps these labels to the displayed categories “TRUTH” and “LIE.”
+Finally, the interface presents the audio recording, the calculated feature values, the predicted class, and a simple explanation based on predefined thresholds.
+The application is designed to be simple and interactive, making it suitable for demonstrating the integration of data processing, machine learning, and web development in a single project.
+
+
+
+
+5. Problem Statement
+   
+Analyzing human speech computationally presents several challenges because vocal characteristics vary between individuals and across different situations. Changes in speaking patterns may be associated with stress, anxiety, fatigue, environmental noise, or other factors.
+The main problem addressed by this project is how to develop a simple application that processes speech recordings, extracts measurable audio features, and applies a machine learning classifier to produce a structured prediction.
+The project explores the following question:
+How can audio signal processing and machine learning be integrated into an interactive application for experimental speech-feature classification?
+The current prototype addresses this question by implementing a basic feature extraction process, a Random Forest classification model, and an interactive Streamlit interface. Determining whether the predictions correspond to actual deception would require a much larger, carefully labeled dataset and rigorous scientific validation.
+
+
+
+
+
+6. Project Objectives
+   
+The main objective of the Lie Detection AI project is to develop an interactive machine learning application that demonstrates the processing and classification of audio data.
+The specific objectives are:
+1. To develop a user-friendly interface for uploading audio recordings.
+2. To process audio files using Python-based audio processing tools.
+3. To extract numerical features from the audio signal.
+4. To implement a Random Forest classification algorithm.
+5. To generate a binary prediction from the extracted features.
+6. To display the extracted features and classification results.
+7. To provide a simple rule-based explanation of selected feature values.
+8. To demonstrate the practical integration of Artificial Intelligence and web application development.
+9. To identify the limitations of the current prototype and propose future improvements.
+10. To establish a foundation for more rigorous research into speech analysis and machine learning.
+
+
+
+
+6. Project Scope
+   
+ The scope of the current project is limited to a proof-of-concept application that accepts WAV audio recordings and classifies extracted numerical features using a predefined Random Forest model.
+The implementation includes audio file uploading, temporary file storage, audio signal loading, basic feature calculations, machine learning prediction, and result visualization.
+The current version does not include a large-scale training dataset, speaker identification, facial analysis, real-time recording, advanced speech recognition, or a scientifically validated deception detection method. In particular, the eye-shift feature is simulated from the voice-stress feature and does not represent an actual measurement of eye movement.
+Consequently, the system should be considered an educational demonstration rather than a reliable lie detection instrument.
