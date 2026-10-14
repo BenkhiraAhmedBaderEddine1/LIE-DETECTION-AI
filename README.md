@@ -1191,13 +1191,7 @@ Future work should focus on better datasets, validated acoustic features, rigoro
 
 Ultimately, the project's main contribution is demonstrating an accessible machine learning workflow while establishing a clear foundation for more scientifically rigorous research into speech analysis.
 
-🔷 27. Acknowledgment
 
-We would like to express our sincere appreciation to the Wamidh Club and the university community for the opportunity to participate in a university competition and present our Lie Detection AI project.
-
-This experience provided a valuable opportunity to explore Artificial Intelligence, collaborate on a practical technical project, and develop our skills in programming, problem-solving, and project presentation.
-
-We also acknowledge the importance of teamwork, continuous learning, and constructive feedback in improving the quality and reliability of technological solutions.
 
 
 ---
