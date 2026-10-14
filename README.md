@@ -98,6 +98,127 @@ The specific objectives are:
 9. To identify the limitations of the current prototype and propose future improvements.
 10. To establish a foundation for more rigorous research into speech analysis and machine learning.
 
+ <!-- ═══════════════════ PROJECT OBJECTIVES — NEON EDITION ═══════════════════ -->
+
+<h2 align="center">🎯 PROJECT OBJECTIVES</h2>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=17&duration=2600&pause=800&color=00F5FF&center=true&vCenter=true&width=850&height=45&lines=DESIGN.+PROCESS.+CLASSIFY.+EXPLAIN.;FROM+RAW+AUDIO+TO+MACHINE+LEARNING;BUILDING+AN+INTERACTIVE+AI+PROTOTYPE" alt="Animated Project Objectives"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/01-INTERACTIVE_INTERFACE-00F5FF?style=for-the-badge&labelColor=020617" alt="Interactive Interface"/>
+  <img src="https://img.shields.io/badge/02-AUDIO_PROCESSING-7B2CFF?style=for-the-badge&labelColor=020617" alt="Audio Processing"/>
+  <img src="https://img.shields.io/badge/03-MACHINE_LEARNING-FF3CAC?style=for-the-badge&labelColor=020617" alt="Machine Learning"/>
+</p>
+
+### 🧠 Main Objective
+
+The main objective of **LIE DETECTION AI** is to develop an interactive machine learning application that demonstrates the processing, feature extraction, and classification of audio data. The project integrates Python-based audio analysis with an accessible user interface to illustrate a practical AI workflow, from audio input to model prediction and result visualization.
+
+---
+
+### ⚡ SPECIFIC OBJECTIVES
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🎙️ 01 · Audio Upload</h3>
+      Develop a user-friendly interface that allows users to upload audio recordings for analysis.
+    </td>
+    <td width="50%" valign="top">
+      <h3>⚙️ 02 · Audio Processing</h3>
+      Process audio files using Python-based audio processing tools and prepare signals for feature extraction.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>📊 03 · Feature Extraction</h3>
+      Extract numerical features from audio signals to create structured inputs for the classification model.
+    </td>
+    <td width="50%" valign="top">
+      <h3>🌲 04 · Random Forest</h3>
+      Implement a Random Forest classification algorithm to analyze extracted features and produce model predictions.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🔮 05 · Binary Prediction</h3>
+      Generate a binary classification output based on the model's learned patterns and the supplied audio features.
+    </td>
+    <td width="50%" valign="top">
+      <h3>📈 06 · Result Visualization</h3>
+      Display extracted feature values and classification results through a clear, accessible interface.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>💡 07 · Rule-Based Explanation</h3>
+      Provide simple, rule-based explanations of selected feature values to help users interpret the displayed results.
+    </td>
+    <td width="50%" valign="top">
+      <h3>🔗 08 · AI Integration</h3>
+      Demonstrate the practical integration of Artificial Intelligence, Python-based processing, and web application development.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🔬 09 · Limitations & Improvements</h3>
+      Identify prototype limitations and outline potential improvements in data quality, feature engineering, model validation, and usability.
+    </td>
+    <td width="50%" valign="top">
+      <h3>🚀 10 · Future Research</h3>
+      Establish a foundation for more rigorous research into speech analysis, audio classification, and machine learning.
+    </td>
+  </tr>
+</table>
+
+---
+
+### 🔄 OBJECTIVE EXECUTION PIPELINE
+
+<p align="center">
+  <img src="https://img.shields.io/badge/UPLOAD-AUDIO-020617?style=for-the-badge&labelColor=00F5FF" alt="Upload Audio"/>
+  ➜
+  <img src="https://img.shields.io/badge/PROCESS-SIGNAL-020617?style=for-the-badge&labelColor=7B2CFF" alt="Process Signal"/>
+  ➜
+  <img src="https://img.shields.io/badge/EXTRACT-FEATURES-020617?style=for-the-badge&labelColor=FF3CAC" alt="Extract Features"/>
+</p>
+
+<p align="center">⬇️</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/RANDOM_FOREST-CLASSIFICATION-020617?style=for-the-badge&labelColor=00C853" alt="Random Forest Classification"/>
+  ➜
+  <img src="https://img.shields.io/badge/PREDICT-AND_EXPLAIN-020617?style=for-the-badge&labelColor=FF9D00" alt="Predict and Explain"/>
+</p>
+
+---
+
+### 🏆 EXPECTED OUTCOMES
+
+- A functional interface for audio upload and analysis.
+- An audio-processing workflow that extracts numerical features.
+- A Random Forest model integrated into the application.
+- A presentation layer for predictions and extracted feature values.
+- Simple explanations of selected features based on predefined rules.
+- A documented assessment of prototype limitations and future development opportunities.
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=16&duration=2600&pause=900&color=A78BFA&center=true&vCenter=true&width=850&height=45&lines=MAKE+DATA+UNDERSTANDABLE.;MAKE+MODELS+INTERPRETABLE.;BUILD+AI+WITH+SCIENTIFIC+CARE." alt="Expected Outcomes"/>
+</p>
+
+> **Scientific note:** The binary output represents the model's predicted class, not proof that a person is lying or telling the truth. Voice-based predictions can be affected by dataset bias, recording conditions, individual differences, and model limitations.
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:00F5FF,50:7B2CFF,100:FF3CAC" width="100%" alt="Neon Divider"/>
+</p>
+
+<p align="center">
+  <b>🎙️ AUDIO PROCESSING · 🌲 RANDOM FOREST · 🧠 ARTIFICIAL INTELLIGENCE · 🚀 INNOVATION</b>
+</p>
+
+<!-- ═══════════════════ END OF PROJECT OBJECTIVES ═══════════════════ -->
 
 
 
