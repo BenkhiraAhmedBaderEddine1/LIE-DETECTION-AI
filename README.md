@@ -18,7 +18,19 @@
 
 ---
 
-![image alt](https://github.com/BenkhiraAhmedBaderEddine1/LIE-DETECTION-AI/blob/fcb5776c9013746e8cb3c818de39c741cb210c2c/image123.png)
+
+
+
+‧₊˚🖇️✩ ₊˚🎧⊹♡ ⫘⫘⫘⫘⫘⫘     note  ⫘⫘⫘⫘⫘⫘  ‧₊˚🖇️✩ ₊˚🎧⊹♡
+
+
+there is a file with full code but u need to send me email to explain to u how can u use it   and thanks 
+
+
+‧₊˚🖇️✩ ₊˚🎧⊹♡ ⫘⫘⫘⫘⫘⫘     note  ⫘⫘⫘⫘⫘⫘  ‧₊˚🖇️✩ ₊˚🎧⊹♡
+
+
+![image alt]([https://github.com/BenkhiraAhmedBaderEddine1/LIE-DETECTION-AI/blob/fcb5776c9013746e8cb3c818de39c741cb210c2c/image123.png](https://github.com/BenkhiraAhmedBaderEddine1/LIE-DETECTION-AI/blob/6afdfcc60a063621a4f7020ddfa409ea6ba087a5/photo_2026-10-14_03-33-52.jpg))
 
 
 
