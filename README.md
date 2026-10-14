@@ -440,7 +440,7 @@ This module is rule-based and is separate from the Random Forest model. It does 
 The results module presents the numerical features, predicted class, and available explanatory messages to the user.
 
 11. Dataset Description
-    <p align="center">
+<p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=00F5FF" width="100%" alt="Cyan line 1"/>
   <br/>
   <img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=00F5FF" width="100%" alt="Cyan line 2"/>
