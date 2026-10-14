@@ -1018,6 +1018,88 @@ The system should communicate uncertainty clearly and avoid presenting its predi
 
 **The responsible objective is to explore speech analysis and machine learning rather than to make unsupported judgments about an individual's truthfulness.**
 
+# 🔷 22. Future Improvements
+
+Several improvements could transform the current prototype into a more rigorous speech-analysis research project.
+
+### 🔹 1. Larger and Better-Defined Dataset
+
+Collect a substantially larger dataset with informed consent, reliable annotations, and clearly defined research objectives. The dataset should include appropriate speaker and recording diversity.
+
+### 🔹 2. Improved Acoustic Features
+
+Extract established audio descriptors such as pitch statistics, root mean square energy, zero-crossing rate, spectral centroid, Mel-frequency cepstral coefficients (MFCCs), and frame-based voice activity measurements.
+
+### 🔹 3. Proper Silence and Pause Detection
+
+Implement frame-based energy analysis or voice activity detection to identify periods of speech and silence more accurately.
+
+### 🔹 4. Remove Simulated Features
+
+Replace the artificial eye-shift variable with a genuine audio-derived feature, or remove it entirely. If visual analysis is later introduced, it should be implemented as a separate, explicitly consent-based module.
+
+### 🔹 5. Model Evaluation and Comparison
+
+Compare Random Forest with Logistic Regression, Support Vector Machines, and other appropriate models using consistent data splits and evaluation metrics.
+
+### 🔹 6. Improved Data Pipeline
+
+Separate data preparation, training, validation, and inference. Save the trained model and preprocessing configuration rather than retraining the model every time the application starts.
+
+### 🔹 7. Better Explanations
+
+Display the measured acoustic properties and their limitations. Where appropriate, use model explanation techniques to describe how input features influence the model's prediction without claiming that they prove deception.
+
+### 🔹 8. Real-Time Audio Input
+
+Add optional microphone recording, audio validation, and live visualization of acoustic properties.
+
+### 🔹 9. Improved Interface
+
+Add waveform visualization, spectrograms, clearer feature descriptions, error messages, and downloadable analysis summaries.
+
+### 🔹 10. Robustness and Fairness Testing
+
+Evaluate performance across speakers, recording devices, languages, and acoustic environments. Report subgroup limitations and uncertainty where sufficient data is available.
+
+### 🔹 11. Privacy and Security
+
+Implement secure file handling, automatic temporary-file deletion, consent notices, and appropriate restrictions on data retention.
+
+### 🔹 12. More Defensible Research Objective
+
+Consider reframing the system as an audio-based speech-feature analysis tool or a vocal-pattern classification research prototype. This avoids claiming that vocal stress or pauses can reliably identify deception without strong empirical evidence.
+
+---
+
+# 🔷 23. Proposed Improved Architecture
+
+> **🚀 Future Development Plan — Not Yet Implemented**
+
+The following architecture represents a future development plan rather than functionality already implemented in the submitted code.
+
+
+
+```html
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&duration=25&pause=1200&color=00FF66&center=true&vCenter=true&width=1000&height=220&lines=%E2%9E%A4+01.+AUDIO+INPUT;%E2%94%9C%E2%94%80+WAV+upload+%2F+Optional+Microphone;%E2%9E%A4+02.+AUDIO+VALIDATION+%26+PROCESSING;%E2%94%9C%E2%94%80+File+checks+%7C+Normalization+%7C+Voice+Activity+Detection;%E2%9E%A4+03.+ACOUSTIC+FEATURE+EXTRACTION;%E2%94%9C%E2%94%80+Pitch+%7C+RMS+Energy+%7C+MFCCs+%7C+Spectral+Features;%E2%9E%A4+04.+TRAINED+ML+MODEL;%E2%94%9C%E2%94%80+Validated+Model+%7C+Consistent+Preprocessing;%E2%9E%A4+05.+RESULTS+%26+EXPLANATIONS;%E2%94%94%E2%94%80+Features+%7C+Uncertainty+%7C+Model+Limitations" alt="Future Architecture - Animated Typing Diagram"/>
+</p>
+```
+
+<p align="center">
+  <b>🔊 AUDIO INPUT</b>
+  <br>⬇
+  <br><b>🛠️ AUDIO VALIDATION & PROCESSING</b>
+  <br>⬇
+  <br><b>📊 ACOUSTIC FEATURE EXTRACTION</b>
+  <br>⬇
+  <br><b>🤖 TRAINED ML MODEL</b>
+  <br>⬇
+  <br><b>📈 RESULTS & EXPLANATIONS</b>
+</p>
+
+
+
 ---
 
 <p align="center">
