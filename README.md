@@ -1110,14 +1110,14 @@ The following architecture represents a future development plan rather than func
 %%{init: {'theme':'dark','themeVariables': {'background':'#0a0014','primaryColor':'#1a0b2e','primaryTextColor':'#fef3c7','primaryBorderColor':'#facc15','lineColor':'#f59e0b','secondaryColor':'#3b0764','tertiaryColor':'#0f0a1f','fontFamily':'Trebuchet MS'}}}%%
 flowchart TD
 
-    subgraph INPUT["🔐 STAGE I — SECURE INPUT ACQUISITION"]
+   subgraph INPUT["🔐 STAGE I — SECURE INPUT ACQUISITION"]
         direction TB
         A1(["🎙️ Consented Audio Recording"])
         A2["✅ Input Validation"]
         A1 --> A2
     end
 
-    subgraph PREP["⚙️ STAGE II — SIGNAL CONDITIONING"]
+   subgraph PREP["⚙️ STAGE II — SIGNAL CONDITIONING"]
         direction TB
         B1["🧪 Audio Preprocessing"]
         B2["🗣️ Voice Activity Detection"]
@@ -1129,14 +1129,14 @@ flowchart TD
         B3 --> B4
     end
 
-    subgraph CORE["🧠 STAGE III — INTELLIGENCE CORE"]
+   subgraph CORE["🧠 STAGE III — INTELLIGENCE CORE"]
         direction TB
         C1[("💾 Saved Trained Model")]
         C2["🎯 Prediction & Uncertainty Engine"]
         C1 --> C2
     end
 
-    subgraph OUTPUT["📡 STAGE IV — INSIGHT & DELIVERY"]
+   subgraph OUTPUT["📡 STAGE IV — INSIGHT & DELIVERY"]
         direction TB
         D1["📈 Feature Visualization"]
         D2["🛡️ Performance-Aware Interpretation"]
@@ -1144,27 +1144,25 @@ flowchart TD
         D1 --> D3
         D2 --> D3
     end
-
     A2 ==> B1
     B4 ==> C1
     C2 ==> D1
     C2 ==> D2
 
-    classDef entry fill:#3b0764,stroke:#facc15,stroke-width:3px,color:#fef9c3,font-weight:bold
+   classDef entry fill:#3b0764,stroke:#facc15,stroke-width:3px,color:#fef9c3,font-weight:bold
     classDef prep fill:#1e1b4b,stroke:#f59e0b,stroke-width:2px,color:#fde68a
     classDef core fill:#450a0a,stroke:#ff3b3b,stroke-width:3px,color:#fecaca,font-weight:bold
     classDef out fill:#064e3b,stroke:#34d399,stroke-width:2.5px,color:#d1fae5
     classDef finale fill:#1a0b2e,stroke:#facc15,stroke-width:4px,color:#fef3c7,font-weight:bold
-
-    class A1,A2 entry
+    
+   class A1,A2 entry
     class B1,B2,B3,B4 prep
     class C1,C2 core
     class D1,D2 out
     class D3 finale
 
-    style INPUT fill:#1a0b2e,stroke:#facc15,stroke-width:2px
+   style INPUT fill:#1a0b2e,stroke:#facc15,stroke-width:2px
     style PREP fill:#13091f,stroke:#f59e0b,stroke-width:2px
     style CORE fill:#1f0a0a,stroke:#ff3b3b,stroke-width:2px
     style OUTPUT fill:#06231b,stroke:#34d399,stroke-width:2px
-
     linkStyle default stroke:#f59e0b,stroke-width:2.5px
