@@ -1,8 +1,22 @@
- <!-- ═══════════════════ LIE DETECTION AI — FUTURISTIC PROJECT README ═══════════════════ -->
+ <p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=venom&height=250&color=0:020617,25:0B1535,55:312E81,80:075985,100:00F5FF&text=LIE%20DETECTION%20AI&fontColor=FFFFFF&fontSize=42&fontAlignY=40&animation=twinkling&stroke=00F5FF&strokeWidth=1" width="100%" alt="LIE DETECTION AI"/>
+</p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=venom&height=250&color=0:020617,25:0B1535,
+  <b>A Machine Learning-Based Voice Analysis System</b>
+</p>
 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=18&duration=2500&pause=800&color=00F5FF&center=true&vCenter=true&width=850&height=55&lines=VOICE+ANALYSIS+%7C+MACHINE+LEARNING;AUDIO+SIGNAL+PROCESSING;FEATURE+EXTRACTION+%7C+AI;EXPLORE+THE+SIGNAL.+EVALUATE+THE+EVIDENCE." alt="Animated project tagline"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/ARTIFICIAL_INTELLIGENCE-00F5FF?style=for-the-badge&labelColor=020617" alt="Artificial Intelligence"/>
+  <img src="https://img.shields.io/badge/MACHINE_LEARNING-7B2CFF?style=for-the-badge&labelColor=020617" alt="Machine Learning"/>
+  <img src="https://img.shields.io/badge/VOICE_ANALYSIS-FF3CAC?style=for-the-badge&labelColor=020617" alt="Voice Analysis"/>
+</p>
+
+---
 
 ![image alt](https://github.com/BenkhiraAhmedBaderEddine1/LIE-DETECTION-AI/blob/fcb5776c9013746e8cb3c818de39c741cb210c2c/image123.png)
 
