@@ -398,7 +398,7 @@ flowchart TD
 
 <p align="center">
   <img
-    src="assets/lie_detection_full_architecture_typing.gif"
+    src="lie_detection_full_architecture_typing.gif"
     width="100%"
     alt="LIE DETECTION AI — Full Architecture Description with Neon Green Typing Animation"
   />
