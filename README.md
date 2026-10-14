@@ -397,3 +397,84 @@ flowchart TD
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=14&duration=35&pause=10000&color=00FF66&center=false&vCenter=true&width=1000&height=300&repeat=true&lines=The%20architecture%20consists%20of%20five%20main%20stages%3A%20input%20acquisition%2C%20audio%20processing%2C%20feature%20extraction%2C%20machine%20learning%20classification%2C%20and%20result%20presentation.%20The%20input%20stage%20receives%20a%20WAV%20audio%20file%20from%20the%20user.%20The%20processing%20stage%20loads%20the%20file%20into%20a%20numerical%20signal%20representation.%20The%20feature%20extraction%20stage%20calculates%20the%20selected%20numerical%20indicators.%20These%20indicators%20are%20passed%20to%20the%20Random%20Forest%20classifier%2C%20which%20generates%20a%20predicted%20class.%20The%20final%20stage%20displays%20the%20extracted%20features%2C%20the%20classification%20result%2C%20and%20a%20simple%20rule-based%20explanation%20through%20the%20Streamlit%20interface." alt="Full architecture description typed in neon green"/>
 </p>
+
+
+
+9. System Components
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=00FF66" width="100%" alt="Green line 1"/>
+  <br/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=00FF66" width="100%" alt="Green line 2"/>
+</p>
+
+9.1. User Interface Module  ×͜×
+
+This module allows users to interact with the application. It displays the application title, provides an audio upload component, and presents the extracted features and prediction.
+
+9.2. Audio Input Module.𖥔 ݁ ˖⋆ ˚❆
+
+The audio input module accepts files with the WAV extension. Once a file is uploaded, its contents are written to a temporary file so that Librosa can load the recording from a file path.
+
+9.3. Feature Extraction Module.𖥔 ݁ ˖⋆ ˚❆
+
+This module transforms the audio signal into numerical features. The current implementation calculates voice stress and pause rate using simple signal statistics. It also calculates an artificial eye-shift indicator from the voice-stress value.
+
+9.4. Machine Learning Module.𖥔 ݁ ˖⋆ ˚❆
+
+The machine learning module uses a Random Forest classifier. The model is trained on a small predefined dataset and receives the extracted feature vector to produce a binary prediction.
+
+9.5. Explanation Module.𖥔 ݁ ˖⋆ ˚❆
+
+The explanation module checks whether the extracted feature values exceed predefined thresholds. If a threshold is exceeded, the corresponding explanatory message is displayed.
+This module is rule-based and is separate from the Random Forest model. It does not explain the model's internal decision process.
+
+9.6. Results Display Module.𖥔 ݁ ˖⋆ ˚❆
+
+The results module presents the numerical features, predicted class, and available explanatory messages to the user.
+
+11. Dataset Description
+    <p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=00F5FF" width="100%" alt="Cyan line 1"/>
+  <br/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=00F5FF" width="100%" alt="Cyan line 2"/>
+</p>
+
+The current prototype uses a small dataset created directly within the Python source code using Pandas.
+
+The dataset contains ten observations. Each observation includes three numerical input features:
+
+- Voice stress
+- Pause rate
+- Eye shift
+
+The target variable is a binary label, where 0 represents the class displayed as “TRUTH” and 1 represents the class displayed as “LIE.”
+
+The dataset is manually predefined rather than collected from real-world recordings. It is used to demonstrate the training and prediction workflow of a supervised machine learning model.
+
+The dataset is not sufficiently large or representative to establish model accuracy, generalization, or scientific validity. Furthermore, the dataset does not provide a verified empirical relationship between the selected features and actual deception.
+
+A future version should use a substantially larger, ethically collected, consent-based, and independently labeled dataset with separate training, validation, and test partitions.
+
+
+
+11. Machine Learning Algorithm: Random Forest
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=00F5FF" width="100%" alt="Cyan line 1"/>
+  <br/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=00F5FF" width="100%" alt="Cyan line 2"/>
+</p>
+
+Random Forest is a supervised machine learning algorithm that combines multiple decision trees to perform classification or regression.
+
+During training, the algorithm constructs a collection of decision trees using randomized samples and feature selection. During classification, the trees contribute their predictions, and the final class is determined through aggregation, commonly majority voting.
+
+Random Forest is useful for demonstrating classification because it can model nonlinear relationships and interactions between numerical features without requiring a linear decision boundary.
+
+In this project, the Random Forest classifier receives three input features and predicts one of two classes.
+
+The model is trained using the `fit()` method and generates predictions using the `predict()` method.
+
+However, using Random Forest does not automatically make a system accurate or reliable. The quality of the predictions depends on the quality, size, representativeness, and labeling of the training data, as well as appropriate model evaluation.
+
+In the current implementation, the model is trained on only ten predefined examples. No independent test set or formal evaluation procedure is included.
