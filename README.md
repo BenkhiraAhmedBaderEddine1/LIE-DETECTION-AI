@@ -23,12 +23,11 @@
 
 
 # 1. Abstract
-    ```html
-<p align="center">
-  <span style="color:#00F5FF;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
-  <span style="color:#00F5FF;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+ <p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="Blue divider"/>
+  <br>
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="Blue divider"/>
 </p>
-```
 
 The Lie Detection AI project is an artificial intelligence-based application designed to analyze selected characteristics of human speech using audio signal processing and machine learning techniques. The system allows users to upload an audio recording in WAV format, extracts numerical features from the audio signal, and processes these features using a Random Forest classifier to generate a binary prediction.
 
