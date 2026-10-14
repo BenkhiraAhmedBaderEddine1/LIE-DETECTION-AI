@@ -93,3 +93,16 @@ The specific objectives are:
 The implementation includes audio file uploading, temporary file storage, audio signal loading, basic feature calculations, machine learning prediction, and result visualization.
 The current version does not include a large-scale training dataset, speaker identification, facial analysis, real-time recording, advanced speech recognition, or a scientifically validated deception detection method. In particular, the eye-shift feature is simulated from the voice-stress feature and does not represent an actual measurement of eye movement.
 Consequently, the system should be considered an educational demonstration rather than a reliable lie detection instrument.
+
+7. Technologies and Tools Used
+
+| Technology | Purpose |
+|---|---|
+| Python | Main programming language |
+| Streamlit | Interactive web application interface |
+| NumPy | Numerical calculations and signal analysis |
+| Pandas | Dataset creation and feature organization |
+| Librosa | Audio loading and processing |
+| Scikit-learn | Machine learning and classification |
+| Random Forest | Classification algorithm |
+| Temporary Files | Intermediate storage of uploaded audio |
