@@ -1106,10 +1106,11 @@ The following architecture represents a future development plan rather than func
 </p>
 
 
+```mermaid
 %%{init: {'theme':'dark','themeVariables': {'background':'#0a0014','primaryColor':'#1a0b2e','primaryTextColor':'#fef3c7','primaryBorderColor':'#facc15','lineColor':'#f59e0b','secondaryColor':'#3b0764','tertiaryColor':'#0f0a1f','fontFamily':'Arial'}}}%%
 flowchart TD
 
-   A(["🎙️ Consented Audio Recording"])
+    A(["🎙️ Consented Audio Recording"])
     B["✅ Input Validation"]
     C["🧪 Audio Preprocessing"]
     D["🗣️ Voice Activity Detection"]
@@ -1121,7 +1122,7 @@ flowchart TD
     J["🛡️ Performance-Aware Interpretation"]
     K(["🖥️ Streamlit Dashboard"])
 
-   A --> B
+    A --> B
     B --> C
     C --> D
     C --> E
@@ -1134,18 +1135,18 @@ flowchart TD
     I --> K
     J --> K
 
-   classDef start fill:#3b0764,stroke:#facc15,color:#fef9c3,stroke-width:2.5px
+    classDef start fill:#3b0764,stroke:#facc15,color:#fef9c3,stroke-width:2.5px
     classDef process fill:#1e1b2e,stroke:#f59e0b,color:#fde68a,stroke-width:1.5px
     classDef feature fill:#2a0a3d,stroke:#c084fc,color:#f3e8ff,stroke-width:2px
     classDef storage fill:#172554,stroke:#818cf8,color:#e0e7ff,stroke-width:2px
     classDef model fill:#052e1f,stroke:#34d399,color:#d1fae5,stroke-width:2px
     classDef result fill:#450a24,stroke:#fb7185,color:#ffe4e6,stroke-width:2px
 
-   class A,K start
+    class A,K start
     class B,C process
     class D,E,F feature
     class G storage
     class H model
     class I,J result
 
-   linkStyle default stroke:#f59e0b,stroke-width:2px
+    linkStyle default ```
