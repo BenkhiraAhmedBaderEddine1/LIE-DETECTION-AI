@@ -23,7 +23,7 @@
 
 
 # 1. Abstract
-```html
+    ```html
 <p align="center">
   <span style="color:#00F5FF;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
   <span style="color:#00F5FF;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
@@ -42,12 +42,13 @@ The primary objective of this project is to demonstrate the integration of audio
 
 
 2. Introduction
-
-```html
+ 
+   ```html
 <p align="center">
   <span style="color:#00F5FF;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
   <span style="color:#00F5FF;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
 </p>
+```
 ```
 
    Artificial Intelligence has become an important technology in the development of intelligent systems capable of processing data, identifying patterns, and generating predictions. One of its applications is speech analysis, which involves examining acoustic characteristics of human speech through digital signal processing and machine learning techniques.
