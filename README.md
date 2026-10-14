@@ -42,13 +42,11 @@ The primary objective of this project is to demonstrate the integration of audio
 
 2. Introduction
  
-   ```html
-<p align="center">
-  <span style="color:#00F5FF;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
-  <span style="color:#00F5FF;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+ <p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="Blue divider"/>
+  <br>
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="Blue divider"/>
 </p>
-```
-```
 
    Artificial Intelligence has become an important technology in the development of intelligent systems capable of processing data, identifying patterns, and generating predictions. One of its applications is speech analysis, which involves examining acoustic characteristics of human speech through digital signal processing and machine learning techniques.
 
@@ -61,12 +59,11 @@ The system combines Python-based audio processing with a simple interactive inte
 Although the application uses the terminology of lie detection, its current capabilities are limited to experimental feature analysis and classification. It does not establish whether a speaker is actually lying. Instead, it demonstrates the technical workflow required to build an audio-based machine learning application and provides a foundation for future improvements.
 
 3. Project Description
- ```html
-<p align="center">
-  <span style="color:#00F5FF;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
-  <span style="color:#00F5FF;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+ <p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="Blue divider"/>
+  <br>
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="Blue divider"/>
 </p>
-```
 
 The Lie Detection AI system is a web-based application that processes uploaded audio recordings and generates a machine learning classification result.
 
@@ -80,12 +77,11 @@ The application is designed to be simple and interactive, making it suitable for
 
 
 3. Project Description
-  ```html
-<p align="center">
-  <span style="color:#00F5FF;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
-  <span style="color:#00F5FF;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+ <p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="Blue divider"/>
+  <br>
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="Blue divider"/>
 </p>
-```
 The Lie Detection AI system is a web-based application that processes uploaded audio recordings and generates a machine learning classification result.
 The application follows a sequence of operations. First, the user uploads an audio file in WAV format. The application temporarily stores the file so that it can be processed. Next, the audio signal is loaded using Librosa, and selected numerical characteristics are calculated.
 The extracted features are then passed to a Random Forest classifier that has been trained using a small predefined dataset. The model predicts one of two classes, represented by the labels 0 and 1. The application maps these labels to the displayed categories “TRUTH” and “LIE.”
@@ -96,12 +92,11 @@ The application is designed to be simple and interactive, making it suitable for
 
 
 5. Problem Statement
- ```html
-<p align="center">
-  <span style="color:#00F5FF;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
-  <span style="color:#00F5FF;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+ <p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="Blue divider"/>
+  <br>
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="Blue divider"/>
 </p>
-```
    
 Analyzing human speech computationally presents several challenges because vocal characteristics vary between individuals and across different situations. Changes in speaking patterns may be associated with stress, anxiety, fatigue, environmental noise, or other factors.
 The main problem addressed by this project is how to develop a simple application that processes speech recordings, extracts measurable audio features, and applies a machine learning classifier to produce a structured prediction.
@@ -237,14 +232,22 @@ The main objective of **LIE DETECTION AI** is to develop an interactive machine 
 
 
 6. Project Scope
-   
+ <p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="Blue divider"/>
+  <br>
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="Blue divider"/>
+</p>
  The scope of the current project is limited to a proof-of-concept application that accepts WAV audio recordings and classifies extracted numerical features using a predefined Random Forest model.
 The implementation includes audio file uploading, temporary file storage, audio signal loading, basic feature calculations, machine learning prediction, and result visualization.
 The current version does not include a large-scale training dataset, speaker identification, facial analysis, real-time recording, advanced speech recognition, or a scientifically validated deception detection method. In particular, the eye-shift feature is simulated from the voice-stress feature and does not represent an actual measurement of eye movement.
 Consequently, the system should be considered an educational demonstration rather than a reliable lie detection instrument.
 
 7. Technologies and Tools Used
-
+ <p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="Blue divider"/>
+  <br>
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=4&color=00BFFF" width="100%" alt="Blue divider"/>
+</p>
 | Technology | Purpose |
 |---|---|
 | Python | Main programming language |
